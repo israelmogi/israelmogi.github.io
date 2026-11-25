@@ -1,0 +1,1441 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>女生自愈视频 | 温柔发声 · 陪伴每一次自我修复的旅程</title>
+<meta name="description" content="女生自愈视频，一个专注于女性情绪修复与心灵陪伴的视频品牌。以真实故事、深度对话与沉浸式影像，陪你在每一个需要被温柔对待的夜晚找到力量。">
+<meta name="keywords" content="女生自愈视频,女性成长,情绪疗愈,自我修复,心灵陪伴,深夜电台,治愈短片">
+<meta name="author" content="女生自愈视频品牌团队">
+<meta property="og:title" content="女生自愈视频_女性心灵陪伴 · 在影像里慢慢变好">
+<meta property="og:description" content="女生自愈视频——记录真实女性故事，用影像与对话搭建一座温柔的自愈空间。">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --ink:#1f1b1a;
+  --ink-soft:#4a403d;
+  --paper:#faf6f2;
+  --paper-2:#f3ebe4;
+  --blush:#e8b4b8;
+  --blush-deep:#c98d94;
+  --sage:#8ba888;
+  --sage-deep:#5f7d5c;
+  --gold:#c9a86a;
+  --line:rgba(74,64,61,.14);
+  --shadow:0 18px 50px -22px rgba(58,44,42,.35);
+  --radius:22px;
+  --serif:"Songti SC","Noto Serif SC",Georgia,"Times New Roman",serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{background:var(--blush);color:#fff}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* ---------- 通用 ---------- */
+.wrap{width:min(1180px,92vw);margin:0 auto}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--sage-deep);font-weight:600;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--sage-deep)}
+h2.section-title{
+  font-family:var(--serif);
+  font-size:clamp(1.7rem,3.4vw,2.6rem);
+  font-weight:700;line-height:1.35;letter-spacing:.01em;
+  margin:.7rem 0 .9rem;
+}
+.section-desc{max-width:56ch;color:var(--ink-soft);font-size:1rem}
+.section{padding:clamp(64px,9vw,110px) 0}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.22,.7,.3,1),transform .9s cubic-bezier(.22,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.tag{
+  display:inline-block;padding:.28rem .8rem;border-radius:999px;
+  font-size:.72rem;letter-spacing:.08em;
+  background:rgba(139,168,136,.16);color:var(--sage-deep);
+  border:1px solid rgba(139,168,136,.28);
+}
+
+/* ---------- 顶部导航 ---------- */
+header.site-head{
+  position:fixed;inset:0 0 auto 0;z-index:80;
+  transition:background .45s ease,box-shadow .45s ease,backdrop-filter .45s;
+}
+header.site-head.scrolled{
+  background:rgba(250,246,242,.86);
+  backdrop-filter:blur(14px) saturate(140%);
+  box-shadow:0 1px 0 var(--line);
+}
+.nav-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  height:74px;
+}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand-mark{
+  width:38px;height:38px;border-radius:12px;
+  background:linear-gradient(140deg,var(--blush),var(--sage));
+  display:grid;place-items:center;box-shadow:0 8px 18px -8px rgba(201,141,148,.8);
+}
+.brand-mark svg{width:21px;height:21px}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text b{font-family:var(--serif);font-size:1.02rem;letter-spacing:.02em}
+.brand-text span{font-size:.62rem;letter-spacing:.28em;color:var(--ink-soft);text-transform:uppercase}
+nav.main-nav{display:flex;align-items:center;gap:1.7rem}
+nav.main-nav a{
+  font-size:.86rem;color:var(--ink-soft);position:relative;padding:.3rem 0;
+  transition:color .3s;
+}
+nav.main-nav a::after{
+  content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;
+  background:var(--blush-deep);transition:width .35s ease;border-radius:2px;
+}
+nav.main-nav a:hover{color:var(--ink)}
+nav.main-nav a:hover::after{width:100%}
+.nav-cta{
+  padding:.55rem 1.2rem;border-radius:999px;
+  background:var(--ink);color:var(--paper)!important;
+  font-size:.82rem;letter-spacing:.05em;
+  transition:transform .3s,box-shadow .3s;
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(31,27,26,.7)}
+.burger{display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);place-items:center}
+.burger span{display:block;width:18px;height:1.6px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.6px;background:var(--ink)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.mobile-panel{
+  position:fixed;inset:74px 0 auto 0;z-index:70;
+  background:rgba(250,246,242,.97);backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+  display:none;flex-direction:column;padding:1rem 6vw 1.6rem;gap:.2rem;
+}
+.mobile-panel.open{display:flex}
+.mobile-panel a{padding:.85rem 0;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--ink-soft)}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;padding:150px 0 90px;overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 82% -8%,rgba(232,180,184,.38),transparent 62%),
+    radial-gradient(760px 480px at 6% 12%,rgba(139,168,136,.26),transparent 60%),
+    linear-gradient(180deg,#fdfaf7 0%,var(--paper) 78%);
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero h1{
+  font-family:var(--serif);
+  font-size:clamp(2.6rem,6.2vw,4.6rem);
+  line-height:1.14;font-weight:800;letter-spacing:-.01em;
+  margin:1rem 0 1.4rem;
+}
+.hero h1 em{
+  font-style:normal;position:relative;white-space:nowrap;
+  background:linear-gradient(100deg,var(--blush-deep),var(--gold));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:.06em;height:.34em;z-index:-1;
+  background:rgba(232,180,184,.32);border-radius:4px;
+}
+.hero-lead{font-size:1.06rem;color:var(--ink-soft);max-width:46ch;margin-bottom:2rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.9rem 1.7rem;border-radius:999px;
+  background:var(--ink);color:var(--paper);
+  font-size:.92rem;letter-spacing:.04em;
+  box-shadow:0 16px 34px -18px rgba(31,27,26,.85);
+  transition:transform .32s,box-shadow .32s;
+}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 22px 42px -20px rgba(31,27,26,.9)}
+.btn-primary svg{width:15px;height:15px}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.9rem 1.5rem;border-radius:999px;
+  border:1px solid var(--line);font-size:.9rem;color:var(--ink-soft);
+  transition:border-color .3s,color .3s,background .3s;
+}
+.btn-ghost:hover{border-color:var(--ink);color:var(--ink);background:rgba(255,255,255,.5)}
+.hero-meta{display:flex;gap:2.2rem;margin-top:2.6rem;flex-wrap:wrap}
+.hero-meta div b{display:block;font-family:var(--serif);font-size:1.55rem;line-height:1.2}
+.hero-meta div span{font-size:.76rem;letter-spacing:.12em;color:var(--ink-soft)}
+
+/* 播放卡 */
+.player-card{
+  position:relative;border-radius:28px;overflow:hidden;
+  background:#2c2422;box-shadow:0 40px 80px -38px rgba(44,36,34,.7);
+  aspect-ratio:4/4.6;
+}
+.player-card .scene{position:absolute;inset:0}
+.player-card .scene svg{width:100%;height:100%}
+.player-overlay{
+  position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;
+  padding:1.4rem;background:linear-gradient(180deg,rgba(20,15,14,.18),rgba(20,15,14,.62));
+  color:#fdf8f4;
+}
+.player-top{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;letter-spacing:.14em}
+.live-dot{display:inline-flex;align-items:center;gap:.4rem}
+.live-dot i{width:7px;height:7px;border-radius:50%;background:#e8b4b8;box-shadow:0 0 0 0 rgba(232,180,184,.8);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(232,180,184,.7)}70%{box-shadow:0 0 0 12px rgba(232,180,184,0)}100%{box-shadow:0 0 0 0 rgba(232,180,184,0)}}
+.player-bottom h3{font-family:var(--serif);font-size:1.4rem;line-height:1.35;margin-bottom:.4rem}
+.player-bottom p{font-size:.8rem;opacity:.78;margin-bottom:1rem}
+.player-controls{display:flex;align-items:center;gap:.9rem}
+.play-btn{
+  width:52px;height:52px;border-radius:50%;background:rgba(253,248,244,.16);
+  border:1px solid rgba(253,248,244,.4);display:grid;place-items:center;
+  backdrop-filter:blur(6px);transition:transform .3s,background .3s;
+}
+.play-btn:hover{transform:scale(1.07);background:rgba(253,248,244,.28)}
+.play-btn svg{width:16px;height:16px;fill:#fdf8f4;margin-left:2px}
+.progress{flex:1;height:3px;border-radius:3px;background:rgba(253,248,244,.24);position:relative;overflow:hidden}
+.progress i{position:absolute;inset:0 auto 0 0;width:38%;background:linear-gradient(90deg,var(--blush),var(--gold));border-radius:3px}
+.time{font-size:.72rem;letter-spacing:.06em;opacity:.8}
+.float-badge{
+  position:absolute;right:-14px;bottom:64px;z-index:3;
+  background:var(--paper);padding:.85rem 1.1rem;border-radius:16px;
+  box-shadow:var(--shadow);display:flex;gap:.7rem;align-items:center;
+  animation:floaty 6s ease-in-out infinite;
+}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.float-badge .ico{width:34px;height:34px;border-radius:10px;background:rgba(139,168,136,.18);display:grid;place-items:center}
+.float-badge .ico svg{width:17px;height:17px;stroke:var(--sage-deep);fill:none;stroke-width:1.7}
+.float-badge b{font-size:.82rem;display:block;line-height:1.3}
+.float-badge span{font-size:.68rem;color:var(--ink-soft)}
+
+/* ---------- 品牌条 ---------- */
+.brandbar{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:rgba(243,235,228,.5);padding:1.3rem 0;overflow:hidden;
+}
+.brandbar-track{display:flex;gap:3.4rem;align-items:center;white-space:nowrap;animation:marquee 34s linear infinite;width:max-content}
+.brandbar-track span{
+  font-family:var(--serif);font-size:.95rem;letter-spacing:.14em;color:var(--ink-soft);
+  display:inline-flex;align-items:center;gap:.9rem;opacity:.8;
+}
+.brandbar-track span::after{content:"✦";color:var(--blush-deep);font-size:.7rem}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- 关于 ---------- */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.about-visual{position:relative}
+.about-frame{
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  aspect-ratio:5/5.6;background:#ead9d5;
+}
+.about-frame svg{width:100%;height:100%}
+.about-note{
+  position:absolute;left:-18px;bottom:26px;background:var(--paper);
+  padding:1rem 1.2rem;border-radius:16px;box-shadow:var(--shadow);max-width:220px;
+}
+.about-note p{font-family:var(--serif);font-size:.9rem;line-height:1.6;color:var(--ink-soft)}
+.about-note .sig{display:flex;align-items:center;gap:.5rem;margin-top:.6rem;font-size:.7rem;letter-spacing:.1em;color:var(--sage-deep)}
+.about-note .sig i{width:22px;height:1px;background:var(--sage-deep)}
+.about-body p{color:var(--ink-soft);margin-bottom:1.1rem;font-size:.98rem}
+.about-body p strong{color:var(--ink);font-weight:600}
+.value-list{display:grid;gap:.9rem;margin-top:1.8rem}
+.value-item{
+  display:flex;gap:1rem;padding:1rem 1.1rem;border-radius:14px;
+  background:rgba(255,255,255,.6);border:1px solid var(--line);
+  transition:transform .35s,border-color .35s,background .35s;
+}
+.value-item:hover{transform:translateX(6px);border-color:rgba(201,141,148,.5);background:#fff}
+.value-item .num{
+  font-family:var(--serif);font-size:1.05rem;color:var(--blush-deep);font-weight:700;min-width:2ch;
+}
+.value-item b{display:block;font-size:.94rem;margin-bottom:.15rem}
+.value-item span{font-size:.83rem;color:var(--ink-soft);line-height:1.6}
+
+/* ---------- 内容频道 ---------- */
+.channels{background:linear-gradient(180deg,var(--paper) 0%,var(--paper-2) 100%)}
+.channel-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:2.6rem}
+.channel-tabs{display:flex;gap:.5rem;flex-wrap:wrap}
+.channel-tabs button{
+  padding:.5rem 1.1rem;border-radius:999px;font-size:.82rem;color:var(--ink-soft);
+  border:1px solid var(--line);background:rgba(255,255,255,.55);
+  transition:all .3s;
+}
+.channel-tabs button.active,.channel-tabs button:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.channel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.5rem}
+.channel-card{
+  background:var(--paper);border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--line);box-shadow:0 2px 0 rgba(255,255,255,.6) inset;
+  transition:transform .4s cubic-bezier(.22,.7,.3,1),box-shadow .4s;
+  display:flex;flex-direction:column;
+}
+.channel-card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.card-thumb{position:relative;aspect-ratio:16/10;overflow:hidden}
+.card-thumb svg{width:100%;height:100%;transition:transform .8s cubic-bezier(.22,.7,.3,1)}
+.channel-card:hover .card-thumb svg{transform:scale(1.06)}
+.card-duration{
+  position:absolute;right:.75rem;bottom:.75rem;background:rgba(20,15,14,.72);color:#fdf8f4;
+  font-size:.68rem;padding:.18rem .5rem;border-radius:6px;letter-spacing:.06em;backdrop-filter:blur(4px);
+}
+.card-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.85);
+  width:52px;height:52px;border-radius:50%;background:rgba(253,248,244,.9);
+  display:grid;place-items:center;opacity:0;transition:opacity .35s,transform .35s;
+  box-shadow:0 10px 24px -10px rgba(0,0,0,.5);
+}
+.card-play svg{width:15px;height:15px;fill:var(--ink);margin-left:2px}
+.channel-card:hover .card-play{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.card-body{padding:1.15rem 1.2rem 1.35rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.card-body .meta{display:flex;align-items:center;gap:.6rem;font-size:.7rem;letter-spacing:.1em;color:var(--ink-soft)}
+.card-body .meta .dot{width:3px;height:3px;border-radius:50%;background:var(--ink-soft);opacity:.5}
+.card-body h3{font-family:var(--serif);font-size:1.12rem;line-height:1.45}
+.card-body p{font-size:.84rem;color:var(--ink-soft);line-height:1.7;flex:1}
+.card-foot{display:flex;justify-content:space-between;align-items:center;padding-top:.6rem;border-top:1px dashed var(--line);font-size:.74rem;color:var(--ink-soft)}
+.card-foot .tag{font-size:.68rem}
+
+/* ---------- 数据 ---------- */
+.stats{background:var(--ink);color:#f3ece6;position:relative;overflow:hidden}
+.stats::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(600px 380px at 88% 10%,rgba(232,180,184,.22),transparent 60%),
+             radial-gradient(560px 340px at 6% 90%,rgba(139,168,136,.2),transparent 62%);
+}
+.stats .wrap{position:relative}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.6rem}
+.stat-box{border-left:1px solid rgba(243,236,230,.16);padding-left:1.3rem}
+.stat-box b{display:block;font-family:var(--serif);font-size:clamp(2rem,4vw,2.9rem);line-height:1.1;letter-spacing:-.01em}
+.stat-box b small{font-size:.5em;color:var(--blush);margin-left:.15em}
+.stat-box span{font-size:.78rem;letter-spacing:.08em;opacity:.68}
+.stats-quote{margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(243,236,230,.14)}
+.stats-quote blockquote{
+  font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.45rem);
+  line-height:1.7;max-width:60ch;color:rgba(243,236,230,.9);
+}
+.stats-quote blockquote::before{content:"「";color:var(--blush);margin-right:.1em}
+.stats-quote blockquote::after{content:"」";color:var(--blush);margin-left:.1em}
+.stats-quote cite{display:block;margin-top:1rem;font-style:normal;font-size:.78rem;letter-spacing:.14em;color:var(--blush)}
+
+/* ---------- 嘉宾 ---------- */
+.voices-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:2.6rem}
+.voice-card{
+  background:rgba(255,255,255,.62);border-radius:var(--radius);
+  padding:1.6rem 1.4rem;border:1px solid var(--line);
+  transition:transform .4s,box-shadow .4s;position:relative;
+}
+.voice-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.voice-top{display:flex;align-items:center;gap:.9rem;margin-bottom:1rem}
+.avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;flex-shrink:0;box-shadow:0 6px 14px -8px rgba(0,0,0,.4)}
+.voice-top b{font-size:.94rem;display:block;line-height:1.3}
+.voice-top span{font-size:.72rem;color:var(--ink-soft);letter-spacing:.04em}
+.voice-card p{font-size:.86rem;color:var(--ink-soft);line-height:1.8}
+.voice-card .quote-mark{position:absolute;right:1.2rem;top:.8rem;font-family:var(--serif);font-size:2.6rem;color:rgba(201,141,148,.28);line-height:1}
+
+/* ---------- 社区 / 留言 ---------- */
+.community{background:linear-gradient(180deg,var(--paper-2),var(--paper))}
+.community-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.diary-card{
+  background:var(--paper);border-radius:var(--radius);padding:1.8rem;
+  box-shadow:var(--shadow);border:1px solid var(--line);
+}
+.diary-card h3{font-family:var(--serif);font-size:1.25rem;margin-bottom:.3rem}
+.diary-card .hint{font-size:.78rem;color:var(--ink-soft);margin-bottom:1.2rem;display:block}
+.diary-form{display:flex;flex-direction:column;gap:.8rem}
+.diary-form input,.diary-form textarea,.diary-form select{
+  width:100%;padding:.8rem 1rem;border-radius:12px;border:1px solid var(--line);
+  background:rgba(255,255,255,.7);font-family:inherit;font-size:.88rem;color:var(--ink);
+  transition:border-color .3s,background .3s;resize:vertical;
+}
+.diary-form input:focus,.diary-form textarea:focus,.diary-form select:focus{
+  outline:none;border-color:var(--blush-deep);background:#fff;
+}
+.diary-form textarea{min-height:110px}
+.diary-form button{
+  align-self:flex-start;padding:.75rem 1.6rem;border-radius:999px;
+  background:var(--sage-deep);color:#fdfaf7;font-size:.86rem;letter-spacing:.06em;
+  transition:transform .3s,box-shadow .3s;
+}
+.diary-form button:hover{transform:translateY(-2px);box-shadow:0 12px 26px -14px rgba(95,125,92,.9)}
+.form-msg{font-size:.78rem;color:var(--sage-deep);min-height:1.2em;letter-spacing:.04em}
+.wall-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem}
+.wall-head h3{font-family:var(--serif);font-size:1.25rem}
+.wall-head span{font-size:.74rem;color:var(--ink-soft);letter-spacing:.08em}
+.wall{display:flex;flex-direction:column;gap:1rem;max-height:520px;overflow-y:auto;padding-right:.4rem}
+.wall::-webkit-scrollbar{width:5px}
+.wall::-webkit-scrollbar-thumb{background:rgba(201,141,148,.45);border-radius:6px}
+.note{
+  background:rgba(255,255,255,.72);border-radius:14px;padding:1rem 1.1rem;
+  border:1px solid var(--line);position:relative;
+  animation:noteIn .5s ease both;
+}
+@keyframes noteIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.note .note-head{display:flex;align-items:center;gap:.6rem;margin-bottom:.4rem}
+.note .note-avatar{width:28px;height:28px;border-radius:50%;background:linear-gradient(140deg,var(--blush),var(--sage));display:grid;place-items:center;font-size:.7rem;color:#fff;font-weight:700}
+.note b{font-size:.82rem}
+.note .mood{font-size:.66rem;padding:.1rem .5rem;border-radius:999px;background:rgba(139,168,136,.16);color:var(--sage-deep);margin-left:auto}
+.note p{font-size:.84rem;color:var(--ink-soft);line-height:1.7}
+
+/* ---------- 时间线 ---------- */
+.timeline{position:relative;margin-top:3rem;padding-left:0}
+.timeline::before{
+  content:"";position:absolute;left:calc(50% - .5px);top:0;bottom:0;width:1px;
+  background:linear-gradient(180deg,transparent,var(--line) 12%,var(--line) 88%,transparent);
+}
+.tl-item{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:2.6rem;position:relative}
+.tl-item .tl-dot{
+  position:absolute;left:50%;top:8px;transform:translateX(-50%);
+  width:12px;height:12px;border-radius:50%;background:var(--paper);
+  border:2px solid var(--blush-deep);box-shadow:0 0 0 5px rgba(232,180,184,.18);
+}
+.tl-item:nth-child(odd) .tl-content{grid-column:1;text-align:right}
+.tl-item:nth-child(odd) .tl-empty{grid-column:2}
+.tl-item:nth-child(even) .tl-content{grid-column:2}
+.tl-item:nth-child(even) .tl-empty{grid-column:1;grid-row:1}
+.tl-content .year{font-family:var(--serif);font-size:1.5rem;color:var(--blush-deep);font-weight:700}
+.tl-content h4{font-size:1rem;margin:.25rem 0 .35rem}
+.tl-content p{font-size:.85rem;color:var(--ink-soft);line-height:1.7;max-width:38ch}
+.tl-item:nth-child(odd) .tl-content p{margin-left:auto}
+
+/* ---------- FAQ ---------- */
+.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.faq-list{display:flex;flex-direction:column;gap:.6rem}
+.faq-item{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:rgba(255,255,255,.55);transition:background .3s}
+.faq-item.open{background:#fff;border-color:rgba(201,141,148,.45)}
+.faq-q{width:100%;text-align:left;padding:1.05rem 1.2rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.92rem;font-weight:600;color:var(--ink)}
+.faq-q .ico{width:20px;height:20px;flex-shrink:0;position:relative;transition:transform .4s}
+.faq-q .ico::before,.faq-q .ico::after{content:"";position:absolute;background:var(--ink-soft);border-radius:2px}
+.faq-q .ico::before{left:50%;top:3px;transform:translateX(-50%);width:1.6px;height:14px}
+.faq-q .ico::after{top:50%;left:3px;transform:translateY(-50%);height:1.6px;width:14px}
+.faq-item.open .ico{transform:rotate(135deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,.7,.3,1)}
+.faq-a p{padding:0 1.2rem 1.15rem;font-size:.85rem;color:var(--ink-soft);line-height:1.8}
+
+/* ---------- CTA ---------- */
+.cta-band{position:relative;overflow:hidden;background:linear-gradient(135deg,#2c2422,#40322f)}
+.cta-inner{position:relative;z-index:2;text-align:center;padding:clamp(3.5rem,8vw,6rem) 0;color:#f7f0ea}
+.cta-inner h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.3;margin-bottom:1rem}
+.cta-inner p{max-width:52ch;margin:0 auto 2rem;color:rgba(247,240,234,.72);font-size:.96rem}
+.cta-form{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;max-width:460px;margin:0 auto}
+.cta-form input{
+  flex:1;min-width:200px;padding:.85rem 1.1rem;border-radius:999px;border:1px solid rgba(247,240,234,.24);
+  background:rgba(247,240,234,.08);color:#f7f0ea;font-family:inherit;font-size:.88rem;
+  transition:border-color .3s,background .3s;
+}
+.cta-form input::placeholder{color:rgba(247,240,234,.45)}
+.cta-form input:focus{outline:none;border-color:var(--blush);background:rgba(247,240,234,.14)}
+.cta-form button{
+  padding:.85rem 1.7rem;border-radius:999px;background:var(--blush);color:#2c2422;
+  font-size:.88rem;font-weight:600;letter-spacing:.04em;transition:transform .3s,background .3s;
+}
+.cta-form button:hover{transform:translateY(-2px);background:#f0c4c7}
+.cta-msg{font-size:.78rem;margin-top:.9rem;min-height:1.2em;color:var(--blush)}
+.cta-glow{position:absolute;width:540px;height:540px;border-radius:50%;filter:blur(90px);opacity:.35;z-index:1}
+.cta-glow.g1{background:#e8b4b8;left:-140px;top:-200px}
+.cta-glow.g2{background:#8ba888;right:-160px;bottom:-240px}
+
+/* ---------- 页脚 ---------- */
+footer.site-foot{background:#1a1615;color:rgba(243,236,230,.66);padding:3.5rem 0 2rem;font-size:.85rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2.4rem;margin-bottom:2.6rem}
+.foot-brand .brand-text b{color:#f3ece6}
+.foot-brand p{margin-top:1rem;line-height:1.8;font-size:.82rem;max-width:30ch;color:rgba(243,236,230,.55)}
+.foot-social{display:flex;gap:.6rem;margin-top:1.2rem}
+.foot-social a{
+  width:36px;height:36px;border-radius:10px;border:1px solid rgba(243,236,230,.16);
+  display:grid;place-items:center;transition:background .3s,border-color .3s,transform .3s;
+}
+.foot-social a:hover{background:rgba(232,180,184,.16);border-color:rgba(232,180,184,.4);transform:translateY(-2px)}
+.foot-social svg{width:15px;height:15px;fill:rgba(243,236,230,.72)}
+.foot-col h5{font-size:.76rem;letter-spacing:.16em;color:#f3ece6;margin-bottom:1rem;text-transform:uppercase}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.foot-col a{transition:color .3s}
+.foot-col a:hover{color:var(--blush)}
+.foot-bottom{border-top:1px solid rgba(243,236,230,.1);padding-top:1.5rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.75rem;color:rgba(243,236,230,.42)}
+.foot-bottom a:hover{color:var(--blush)}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:22px;bottom:22px;z-index:60;width:46px;height:46px;border-radius:50%;
+  background:var(--ink);color:var(--paper);display:grid;place-items:center;
+  opacity:0;pointer-events:none;transform:translateY(10px);
+  transition:opacity .4s,transform .4s;box-shadow:0 14px 30px -14px rgba(31,27,26,.8);
+}
+.to-top.show{opacity:1;pointer-events:auto;transform:none}
+.to-top svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2}
+
+/* 响应式 */
+@media(max-width:980px){
+  .hero-grid,.about-grid,.community-grid,.faq-wrap{grid-template-columns:1fr}
+  .hero{padding-top:126px}
+  .player-card{max-width:440px;margin:0 auto}
+  .float-badge{right:6px}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .voices-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .timeline::before{left:8px}
+  .tl-item{grid-template-columns:1fr;gap:0;padding-left:2rem}
+  .tl-item .tl-dot{left:8px;transform:translateX(-50%)}
+  .tl-item:nth-child(odd) .tl-content,.tl-item:nth-child(even) .tl-content{grid-column:1;text-align:left}
+  .tl-item:nth-child(odd) .tl-content p{margin-left:0}
+  .tl-empty{display:none}
+}
+@media(max-width:760px){
+  nav.main-nav{display:none}
+  .burger{display:grid}
+  .nav-cta{display:none}
+  .voices-grid{grid-template-columns:1fr}
+  .hero-meta{gap:1.4rem}
+  .about-note{position:static;margin-top:1rem;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-head" id="siteHead">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="女生自愈视频 首页">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 20s-7-4.4-7-9.2C5 7.7 7 6 9.3 6c1.2 0 2.2.6 2.7 1.5C12.5 6.6 13.5 6 14.7 6 17 6 19 7.7 19 10.8 19 15.6 12 20 12 20Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M9.4 12.2c.9.8 1.4 1.9 1.4 3" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <b>女生自愈视频</b>
+        <span>Her Healing Frames</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#about">关于品牌</a>
+      <a href="#channels">内容频道</a>
+      <a href="#voices">真实声音</a>
+      <a href="#community">自愈日记</a>
+      <a href="#journey">成长足迹</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="nav-cta" href="#subscribe">订阅陪伴</a>
+    <button class="burger" id="burger" aria-label="打开菜单" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#about">关于品牌</a>
+  <a href="#channels">内容频道</a>
+  <a href="#voices">真实声音</a>
+  <a href="#community">自愈日记</a>
+  <a href="#journey">成长足迹</a>
+  <a href="#faq">常见问题</a>
+  <a href="#subscribe">订阅陪伴</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Women · Healing · Documentary</span>
+        <h1><em>女生自愈视频</em><br>在影像里，慢慢变好</h1>
+        <p class="hero-lead">我们把镜头交给真实的女性：那些崩溃后的清晨、独处的深夜、重新站起来的一瞬间。不是要你立刻坚强，而是陪你把碎片一片片捡起来，重新拼成自己。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#channels">
+            开始观看
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn-ghost" href="#community">写下此刻的心情</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>1,280+</b><span>支原创影像</span></div>
+          <div><b>46.8万</b><span>位同行观众</span></div>
+          <div><b>7 年</b><span>持续记录</span></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="player-card">
+          <div class="scene">
+            <svg viewBox="0 0 560 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#3b2f35"/>
+                  <stop offset=".55" stop-color="#6f5560"/>
+                  <stop offset="1" stop-color="#c39aa0"/>
+                </linearGradient>
+                <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#8c7a80"/>
+                  <stop offset="1" stop-color="#5d4c53"/>
+                </linearGradient>
+                <radialGradient id="moon1" cx=".5" cy=".5" r=".5">
+                  <stop offset="0" stop-color="#ffe6d0"/>
+                  <stop offset="1" stop-color="#e8b4b8"/>
+                </radialGradient>
+              </defs>
+              <rect width="560" height="640" fill="url(#sky1)"/>
+              <circle cx="398" cy="152" r="64" fill="url(#moon1)" opacity=".92"/>
+              <circle cx="398" cy="152" r="92" fill="none" stroke="#ffe6d0" stroke-opacity=".18" stroke-width="1"/>
+              <g fill="#ffe6d0" opacity=".7">
+                <circle cx="92" cy="106" r="1.6"/><circle cx="158" cy="58" r="1.2"/>
+                <circle cx="248" cy="128" r="1.8"/><circle cx="492" cy="86" r="1.3"/>
+                <circle cx="330" cy="60" r="1"/><circle cx="60" cy="212" r="1.2"/>
+                <circle cx="470" cy="230" r="1.6"/><circle cx="206" cy="196" r="1"/>
+              </g>
+              <path d="M0 470 C110 408 190 500 300 452 C400 408 470 470 560 432 L560 640 L0 640 Z" fill="url(#hill1)" opacity=".85"/>
+              <path d="M0 520 C120 470 210 546 320 504 C420 466 490 520 560 498 L560 640 L0 640 Z" fill="#443741"/>
+              <g stroke="#e6c4c7" stroke-width="1.4" fill="none" opacity=".8" stroke-linecap="round">
+                <path d="M258 400 c0-14 10-22 22-22 s22 8 22 22"/>
+                <path d="M280 378 v-16"/>
+              </g>
+            </svg>
+          </div>
+          <div class="player-overlay">
+            <div class="player-top">
+              <span class="live-dot"><i></i> 今夜陪伴中</span>
+              <span>EP.128</span>
+            </div>
+            <div class="player-bottom">
+              <h3>允许自己难过，也是一种修复</h3>
+              <p>深夜自愈电台 · 与心理咨询师对谈 42 分钟</p>
+              <div class="player-controls">
+                <button class="play-btn" aria-label="播放预告">
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8L13 8 4 2.6Z"/></svg>
+                </button>
+                <div class="progress"><i></i></div>
+                <span class="time">17:24 / 42:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-badge">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.2C5 7.7 7 6 9.3 6c1.2 0 2.2.6 2.7 1.5C12.5 6.6 13.5 6 14.7 6 17 6 19 7.7 19 10.8 19 15.6 12 20 12 20Z"/></svg>
+          </span>
+          <span>
+            <b>今日 3,214 人</b>
+            <span>和自己说了声没关系</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌条 -->
+  <div class="brandbar" aria-hidden="true">
+    <div class="brandbar-track">
+      <span>真实故事</span><span>温柔发声</span><span>情绪陪伴</span><span>女性视角</span><span>慢下来</span><span>重建自我</span>
+      <span>真实故事</span><span>温柔发声</span><span>情绪陪伴</span><span>女性视角</span><span>慢下来</span><span>重建自我</span>
+    </div>
+  </div>
+
+  <!-- 关于 -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-visual reveal">
+        <div class="about-frame">
+          <svg viewBox="0 0 480 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="ab1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f6e6df"/>
+                <stop offset="1" stop-color="#dcc3c1"/>
+              </linearGradient>
+              <linearGradient id="ab2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#b8ccb0"/>
+                <stop offset="1" stop-color="#7f9a7b"/>
+              </linearGradient>
+            </defs>
+            <rect width="480" height="540" fill="url(#ab1)"/>
+            <circle cx="368" cy="112" r="88" fill="#fdf8f4" opacity=".55"/>
+            <path d="M60 452 C120 372 192 404 246 356 C300 308 356 336 420 292 L420 540 L60 540 Z" fill="url(#ab2)" opacity=".65"/>
+            <g transform="translate(168 176)">
+              <ellipse cx="72" cy="236" rx="86" ry="16" fill="#8a6d6d" opacity=".16"/>
+              <path d="M30 120 C30 74 50 40 72 40 C94 40 114 74 114 120 L114 214 C114 226 104 234 92 234 L52 234 C40 234 30 226 30 214 Z" fill="#f2e2dc"/>
+              <circle cx="72" cy="92" r="34" fill="#e7c8c0"/>
+              <path d="M38 92 C38 60 52 46 72 46 C92 46 106 60 106 92 C106 74 94 66 72 66 C50 66 38 74 38 92Z" fill="#4a3a3c"/>
+              <path d="M30 140 C10 170 14 206 34 214" stroke="#c9a3a0" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M114 140 C134 170 130 206 110 214" stroke="#c9a3a0" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M56 160 h32" stroke="#d9b3ad" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+            </g>
+            <g stroke="#fff" stroke-opacity=".7" stroke-width="1.4" fill="none">
+              <path d="M84 120 q14 -18 28 0 q-14 18 -28 0Z"/>
+              <path d="M108 96 q10 -12 20 0 q-10 12 -20 0Z"/>
+            </g>
+          </svg>
+        </div>
+        <div class="about-note">
+          <p>“自愈不是一个人硬撑，而是被允许脆弱之后，仍愿意向前一点点。”</p>
+          <div class="sig"><i></i> 品牌主理人 · 林知夏</div>
+        </div>
+      </div>
+
+      <div class="about-body reveal">
+        <span class="eyebrow">About Us</span>
+        <h2 class="section-title">一个为女生准备的<br>温柔影像空间</h2>
+        <p><strong>女生自愈视频</strong> 创立于 2018 年，是一支以女性创作者为主体的影像团队。我们不做速效的“正能量”，只做足够诚实的记录——记录那些说不出口的情绪，也记录情绪之后的清晨。</p>
+        <p>从深夜电台到城市漫步短片，从单人独白到多人圆桌，我们相信镜头有抚慰的力量。当一个人看到另一个普通女性如何走过低谷，她也会相信自己的那一段，终会过去。</p>
+        <div class="value-list">
+          <div class="value-item">
+            <span class="num">01</span>
+            <div><b>真实优先</b><span>不表演坚强，不美化低谷，每一位出镜者都保有完整的故事表达权。</span></div>
+          </div>
+          <div class="value-item">
+            <span class="num">02</span>
+            <div><b>专业支撑</b><span>与心理咨询师团队长期共创，所有情绪话题均经过专业审读。</span></div>
+          </div>
+          <div class="value-item">
+            <span class="num">03</span>
+            <div><b>持续陪伴</b><span>每周三更，不追逐热点，只在你需要的时候准时出现。</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 内容频道 -->
+  <section class="section channels" id="channels">
+    <div class="wrap">
+      <div class="channel-head reveal">
+        <div>
+          <span class="eyebrow">Channels</span>
+          <h2 class="section-title">四档节目，四种陪伴方式</h2>
+          <p class="section-desc">无论是在通勤地铁、加班的深夜，还是周末一个人的午后，总有一支片子，适合此刻的你。</p>
+        </div>
+        <div class="channel-tabs" role="tablist" aria-label="内容频道筛选">
+          <button class="active" data-filter="all" role="tab" aria-selected="true">全部</button>
+          <button data-filter="radio" role="tab" aria-selected="false">深夜电台</button>
+          <button data-filter="doc" role="tab" aria-selected="false">纪实短片</button>
+          <button data-filter="talk" role="tab" aria-selected="false">圆桌对话</button>
+          <button data-filter="routine" role="tab" aria-selected="false">生活练习</button>
+        </div>
+      </div>
+
+      <div class="channel-grid" id="channelGrid">
+
+        <article class="channel-card reveal" data-cat="radio">
+          <div class="card-thumb">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="c1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f2930"/><stop offset="1" stop-color="#6d5560"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#c1)"/>
+              <circle cx="316" cy="66" r="34" fill="#ffe0cc" opacity=".85"/>
+              <g stroke="#e8b4b8" stroke-width="1.2" fill="none" opacity=".6">
+                <path d="M40 180 q20 -30 40 0 t40 0 t40 0 t40 0"/>
+                <path d="M40 200 q20 -24 40 0 t40 0 t40 0 t40 0"/>
+              </g>
+              <rect x="246" y="150" width="104" height="66" rx="10" fill="#f2e2dc" opacity=".9"/>
+              <rect x="258" y="162" width="42" height="6" rx="3" fill="#8a6d6d" opacity=".6"/>
+              <rect x="258" y="176" width="66" height="5" rx="2.5" fill="#b99a95" opacity=".7"/>
+              <circle cx="328" cy="196" r="9" fill="#c98d94"/>
+            </svg>
+            <span class="card-duration">42:00</span>
+            <span class="card-play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8L13 8 4 2.6Z"/></svg></span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span>深夜电台</span><span class="dot"></span><span>EP.128</span></div>
+            <h3>允许自己难过，也是一种修复</h3>
+            <p>与心理咨询师聊“情绪羞耻”：我们为什么不敢承认自己难过，又该如何与低落的自己相处。</p>
+            <div class="card-foot"><span class="tag">情绪管理</span><span>3.2 万次观看</span></div>
+          </div>
+        </article>
+
+        <article class="channel-card reveal" data-cat="doc">
+          <div class="card-thumb">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="c2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9c4bb"/><stop offset="1" stop-color="#8f7070"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#c2)"/>
+              <path d="M0 186 L92 118 L166 176 L256 104 L340 172 L400 138 L400 250 L0 250 Z" fill="#5c4a4f" opacity=".82"/>
+              <path d="M0 212 L110 160 L200 206 L300 152 L400 196 L400 250 L0 250 Z" fill="#3d3237"/>
+              <g stroke="#f6e6df" stroke-width="1.6" fill="none" opacity=".85">
+                <circle cx="196" cy="88" r="15"/>
+                <path d="M196 104 v34 M196 116 l-14 14 M196 116 l14 14 M196 138 l-12 20 M196 138 l12 20"/>
+              </g>
+            </svg>
+            <span class="card-duration">18:36</span>
+            <span class="card-play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8L13 8 4 2.6Z"/></svg></span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span>纪实短片</span><span class="dot"></span><span>城市系列</span></div>
+            <h3>一个人走过的三十个清晨</h3>
+            <p>记录三位独居女性早起的一小时：做早餐、遛狗、发呆。平凡生活本身，就是修复的现场。</p>
+            <div class="card-foot"><span class="tag">独居生活</span><span>5.7 万次观看</span></div>
+          </div>
+        </article>
+
+        <article class="channel-card reveal" data-cat="talk">
+          <div class="card-thumb">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="c3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9dbd3"/><stop offset="1" stop-color="#c9a3a0"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#c3)"/>
+              <circle cx="140" cy="120" r="46" fill="#fdf8f4" opacity=".85"/>
+              <circle cx="262" cy="120" r="46" fill="#f2e2dc"/>
+              <circle cx="140" cy="106" r="17" fill="#b99a95"/>
+              <circle cx="262" cy="106" r="17" fill="#8f7070"/>
+              <path d="M116 156 q24 -20 48 0" stroke="#b99a95" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <path d="M238 156 q24 -20 48 0" stroke="#8f7070" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <rect x="150" y="196" width="104" height="26" rx="13" fill="#fdf8f4" opacity=".8"/>
+              <rect x="166" y="206" width="72" height="5" rx="2.5" fill="#b99a95" opacity=".7"/>
+            </svg>
+            <span class="card-duration">56:12</span>
+            <span class="card-play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8L13 8 4 2.6Z"/></svg></span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span>圆桌对话</span><span class="dot"></span><span>第 24 期</span></div>
+            <h3>三十岁，我们重新谈论“来得及”</h3>
+            <p>四位不同职业的女性围坐，聊转行、分手、生育与重启——年龄从来不是截止日期。</p>
+            <div class="card-foot"><span class="tag">女性成长</span><span>8.4 万次观看</span></div>
+          </div>
+        </article>
+
+        <article class="channel-card reveal" data-cat="routine">
+          <div class="card-thumb">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="c4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef0e4"/><stop offset="1" stop-color="#b8ccb0"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#c4)"/>
+              <circle cx="86" cy="70" r="40" fill="#fdf8f4" opacity=".8"/>
+              <path d="M0 190 q60 -26 120 0 t120 0 t120 0 t120 0" stroke="#7f9a7b" stroke-width="2" fill="none" opacity=".6"/>
+              <g transform="translate(196 92)">
+                <path d="M0 68 C0 30 20 6 44 6 C68 6 88 30 88 68 Z" fill="#fdf8f4"/>
+                <path d="M44 6 C52 22 54 44 52 68" stroke="#b8ccb0" stroke-width="2.2" fill="none"/>
+                <path d="M30 68 C30 44 34 30 44 24" stroke="#b8ccb0" stroke-width="2" fill="none"/>
+                <path d="M60 68 C60 46 56 32 46 26" stroke="#b8ccb0" stroke-width="2" fill="none"/>
+              </g>
+              <g stroke="#5f7d5c" stroke-width="1.4" fill="none" opacity=".7">
+                <path d="M310 164 q10 -22 22 0 q-12 10 -22 0Z"/>
+                <path d="M330 154 q8 -16 18 0 q-10 8 -18 0Z"/>
+              </g>
+            </svg>
+            <span class="card-duration">12:04</span>
+            <span class="card-play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8L13 8 4 2.6Z"/></svg></span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span>生活练习</span><span class="dot"></span><span>跟练版</span></div>
+            <h3>睡前十分钟：给身体一次缓慢的松绑</h3>
+            <p>无需器械的呼吸与舒展练习，跟随引导慢慢放松肩颈，把一整天的紧绷轻轻放下。</p>
+            <div class="card-foot"><span class="tag">正念放松</span><span>11.2 万次观看</span></div>
+          </div>
+        </article>
+
+        <article class="channel-card reveal" data-cat="radio">
+          <div class="card-thumb">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="c5" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3a3038"/><stop offset="1" stop-color="#846069"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#c5)"/>
+              <circle cx="200" cy="120" r="58" fill="none" stroke="#e8b4b8" stroke-opacity=".3" stroke-width="1"/>
+              <circle cx="200" cy="120" r="86" fill="none" stroke="#e8b4b8" stroke-opacity=".16" stroke-width="1"/>
+              <g fill="#ffe6d0" opacity=".8">
+                <circle cx="96" cy="70" r="1.6"/><circle cx="312" cy="54" r="1.2"/>
+                <circle cx="330" cy="180" r="1.4"/><circle cx="70" cy="190" r="1.1"/>
+              </g>
+              <path d="M172 120 h12 l8 -22 l10 44 l8 -30 l6 16 h12" stroke="#f2e2dc" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="card-duration">28:40</span>
+            <span class="card-play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8L13 8 4 2.6Z"/></svg></span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span>深夜电台</span><span class="dot"></span><span>EP.119</span></div>
+            <h3>失眠的夜里，我们把心事说小一点</h3>
+            <p>没有建议也没有催促，只是陪你说说话。让过载的大脑，在温和的声音里慢慢安静下来。</p>
+            <div class="card-foot"><span class="tag">睡眠陪伴</span><span>2.9 万次观看</span></div>
+          </div>
+        </article>
+
+        <article class="channel-card reveal" data-cat="doc">
+          <div class="card-thumb">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="c6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4e3d8"/><stop offset="1" stop-color="#d9b0a8"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#c6)"/>
+              <rect x="0" y="176" width="400" height="74" fill="#a9837f" opacity=".55"/>
+              <g transform="translate(120 60)">
+                <rect x="0" y="0" width="76" height="52" rx="4" fill="#fdf8f4" opacity=".9"/>
+                <rect x="14" y="42" width="6" height="60" fill="#7f6360"/>
+                <rect x="56" y="42" width="6" height="60" fill="#7f6360"/>
+                <path d="M38 26 l12 12 l-12 12 l-12 -12Z" fill="#c98d94" opacity=".7"/>
+              </g>
+              <g transform="translate(240 96)">
+                <circle cx="0" cy="0" r="16" fill="#fdf8f4" opacity=".9"/>
+                <path d="M0 18 v34" stroke="#7f6360" stroke-width="4" stroke-linecap="round"/>
+                <path d="M0 26 l-14 12 M0 26 l14 12" stroke="#7f6360" stroke-width="3.4" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span class="card-duration">24:18</span>
+            <span class="card-play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8L13 8 4 2.6Z"/></svg></span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span>纪实短片</span><span class="dot"></span><span>职场系列</span></div>
+            <h3>辞职之后的第一百天</h3>
+            <p>她们离开稳定的岗位，重新学习与自己相处。镜头跟随她们，记录不确定中的选择与胆量。</p>
+            <div class="card-foot"><span class="tag">职业转型</span><span>6.1 万次观看</span></div>
+          </div>
+        </article>
+
+        <article class="channel-card reveal" data-cat="talk">
+          <div class="card-thumb">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="c7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cfdcc6"/><stop offset="1" stop-color="#8ba888"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#c7)"/>
+              <g transform="translate(58 72)">
+                <circle cx="20" cy="16" r="16" fill="#fdf8f4"/>
+                <path d="M-2 62 q22 -26 44 0" fill="#f2e2dc"/>
+                <rect x="56" y="6" width="76" height="16" rx="8" fill="#fdf8f4" opacity=".95"/>
+                <rect x="56" y="30" width="112" height="10" rx="5" fill="#fff" opacity=".7"/>
+                <rect x="56" y="48" width="92" height="10" rx="5" fill="#fff" opacity=".55"/>
+              </g>
+              <g transform="translate(230 128)">
+                <circle cx="20" cy="16" r="16" fill="#f2e2dc"/>
+                <path d="M-2 62 q22 -26 44 0" fill="#e8b4b8" opacity=".8"/>
+                <rect x="56" y="6" width="86" height="16" rx="8" fill="#fdf8f4" opacity=".95"/>
+                <rect x="56" y="30" width="104" height="10" rx="5" fill="#fff" opacity=".7"/>
+              </g>
+            </svg>
+            <span class="card-duration">38:05</span>
+            <span class="card-play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8L13 8 4 2.6Z"/></svg></span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span>圆桌对话</span><span class="dot"></span><span>第 21 期</span></div>
+            <h3>和妈妈重新做一次朋友</h3>
+            <p>三对母女坐在一起，第一次把多年未说出口的话说完。关系里的修复，往往从被听见开始。</p>
+            <div class="card-foot"><span class="tag">亲密关系</span><span>7.3 万次观看</span></div>
+          </div>
+        </article>
+
+        <article class="channel-card reveal" data-cat="routine">
+          <div class="card-thumb">
+            <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="c8" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7ece2"/><stop offset="1" stop-color="#e2c6bd"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#c8)"/>
+              <rect x="0" y="188" width="400" height="62" fill="#c9a3a0" opacity=".4"/>
+              <g transform="translate(96 62)">
+                <path d="M0 96 q40 -22 80 0 q-14 30 -40 30 q-26 0 -40 -30Z" fill="#fdf8f4"/>
+                <path d="M32 96 q8 -22 22 -22 q14 0 14 22" stroke="#c9a3a0" stroke-width="2" fill="none"/>
+                <path d="M24 70 q-4 -20 10 -24" stroke="#8ba888" stroke-width="2" fill="none" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(232 78)">
+                <rect x="0" y="40" width="66" height="56" rx="8" fill="#fdf8f4" opacity=".9"/>
+                <path d="M14 40 v-14 a19 19 0 0 1 38 0 v14" stroke="#b99a95" stroke-width="4" fill="none"/>
+                <circle cx="33" cy="66" r="6" fill="#c98d94"/>
+              </g>
+            </svg>
+            <span class="card-duration">15:32</span>
+            <span class="card-play"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.6v10.8L13 8 4 2.6Z"/></svg></span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span>生活练习</span><span class="dot"></span><span>独处指南</span></div>
+            <h3>一个人的周末，可以这样度过</h3>
+            <p>煮一锅汤、整理房间、看一场老电影。把独处从“孤单”改写成“拥有一整段自己的时间”。</p>
+            <div class="card-foot"><span class="tag">独处练习</span><span>9.6 万次观看</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据 -->
+  <section class="section stats" id="impact">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow" style="color:#e8b4b8">Our Numbers</span>
+        <h2 class="section-title" style="color:#f3ece6">被看见的每一次修复</h2>
+        <p class="section-desc" style="color:rgba(243,236,230,.66)">这些数字背后，是一个个具体的人：她们在加班后的地铁上看完，在失眠的凌晨发来留言，然后第二天继续生活。</p>
+      </div>
+      <div class="stats-grid reveal">
+        <div class="stat-box"><b data-count="1280">0<small>+</small></b><span>原创影像作品</span></div>
+        <div class="stat-box"><b data-count="468">0<small>k</small></b><span>全平台同行观众</span></div>
+        <div class="stat-box"><b data-count="96">0<small>%</small></b><span>观众表示“被理解”</span></div>
+        <div class="stat-box"><b data-count="7">0<small>年</small></b><span>持续稳定更新</span></div>
+      </div>
+      <div class="stats-quote reveal">
+        <blockquote>看完那期关于“允许自己难过”的视频，我第一次没有因为哭而责怪自己。原来被理解，真的会让人好起来。</blockquote>
+        <cite>—— 来自杭州的观众 · 小满</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- 嘉宾声音 -->
+  <section class="section" id="voices">
+    <div class="wrap">
+      <div class="reveal" style="max-width:640px">
+        <span class="eyebrow">Voices</span>
+        <h2 class="section-title">和她们一起，说点真的</h2>
+        <p class="section-desc">每一期节目，我们都邀请不同身份的女性走到镜头前。她们的坦诚，构成了这个品牌最重要的部分。</p>
+      </div>
+      <div class="voices-grid">
+        <div class="voice-card reveal">
+          <span class="quote-mark">”</span>
+          <div class="voice-top">
+            <span class="avatar">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="a1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8b4b8"/><stop offset="1" stop-color="#c98d94"/></linearGradient></defs><rect width="48" height="48" fill="url(#a1)"/><circle cx="24" cy="18" r="9" fill="#fdf8f4" opacity=".85"/><path d="M8 44 q16 -18 32 0Z" fill="#fdf8f4" opacity=".8"/></svg>
+            </span>
+            <div><b>林知夏</b><span>品牌主理人 / 导演</span></div>
+          </div>
+          <p>“我们不是要教谁如何生活，只是想把那些被认为不值得一提的情绪，认真地放到镜头前。被记录，本身就很有力量。”</p>
+        </div>
+        <div class="voice-card reveal">
+          <span class="quote-mark">”</span>
+          <div class="voice-top">
+            <span class="avatar">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="a2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8ba888"/><stop offset="1" stop-color="#5f7d5c"/></linearGradient></defs><rect width="48" height="48" fill="url(#a2)"/><circle cx="24" cy="18" r="9" fill="#fdf8f4" opacity=".85"/><path d="M8 44 q16 -18 32 0Z" fill="#fdf8f4" opacity=".8"/></svg>
+            </span>
+            <div><b>沈澜</b><span>心理咨询师 / 内容顾问</span></div>
+          </div>
+          <p>“自愈不是把伤口藏起来，而是学会在情绪来的时候，不急着评价自己。温柔是一种可以练习的能力。”</p>
+        </div>
+        <div class="voice-card reveal">
+          <span class="quote-mark">”</span>
+          <div class="voice-top">
+            <span class="avatar">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="a3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9a86a"/><stop offset="1" stop-color="#a8834a"/></linearGradient></defs><rect width="48" height="48" fill="url(#a3)"/><circle cx="24" cy="18" r="9" fill="#fdf8f4" opacity=".85"/><path d="M8 44 q16 -18 32 0Z" fill="#fdf8f4" opacity=".8"/></svg>
+            </span>
+            <div><b>周未晚</b><span>出镜嘉宾 / 自由撰稿人</span></div>
+          </div>
+          <p>“拍完那期节目之后，我给很久没联系的妈妈打了个电话。好的内容，会让你想去做一件具体的小事。”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 社区日记 -->
+  <section class="section community" id="community">
+    <div class="wrap">
+      <div class="reveal" style="max-width:620px;margin-bottom:2.6rem">
+        <span class="eyebrow">Community</span>
+        <h2 class="section-title">写一封给自己的短信</h2>
+        <p class="section-desc">不需要写得很好，也不需要署名。把此刻的心情留在这里，让它成为你修复过程中的一个小小坐标。</p>
+      </div>
+      <div class="community-grid">
+        <div class="diary-card reveal">
+          <h3>今日自愈日记</h3>
+          <span class="hint">写下来，就已经是很好的一步。</span>
+          <form class="diary-form" id="diaryForm">
+            <input type="text" id="diaryName" placeholder="你的昵称（可不填）" maxlength="16" aria-label="昵称">
+            <select id="diaryMood" aria-label="选择此刻心情">
+              <option value="平静">此刻的我：平静</option>
+              <option value="有点累">此刻的我：有点累</option>
+              <option value="正在恢复">此刻的我：正在恢复</option>
+              <option value="被治愈了">此刻的我：被治愈了</option>
+              <option value="想被抱抱">此刻的我：想被抱抱</option>
+            </select>
+            <textarea id="diaryText" placeholder="今天，我想对未来说……" maxlength="220" aria-label="日记内容"></textarea>
+            <button type="submit">放进时间胶囊</button>
+            <span class="form-msg" id="diaryMsg"></span>
+          </form>
+        </div>
+
+        <div class="reveal">
+          <div class="wall-head">
+            <h3>大家的心事墙</h3>
+            <span id="wallCount">正在加载…</span>
+          </div>
+          <div class="wall" id="wall" aria-live="polite">
+            <div class="note">
+              <div class="note-head"><span class="note-avatar">阿</span><b>阿禾</b><span class="mood">正在恢复</span></div>
+              <p>今天终于把拖了三个月的体检做了。原来照顾自己，可以先从一件很小的事开始。</p>
+            </div>
+            <div class="note">
+              <div class="note-head"><span class="note-avatar">M</span><b>Momo</b><span class="mood">被治愈了</span></div>
+              <p>看完《一个人走过的三十个清晨》，我也在阳台养了一盆薄荷。每天浇水的时候很安静。</p>
+            </div>
+            <div class="note">
+              <div class="note-head"><span class="note-avatar">晚</span><b>晚风</b><span class="mood">有点累</span></div>
+              <p>这周连着加班到十点。回家路上听了那期电台，突然觉得有人陪着，脚步就轻了一点。</p>
+            </div>
+            <div class="note">
+              <div class="note-head"><span class="note-avatar">青</span><b>青缇</b><span class="mood">平静</span></div>
+              <p>给自己煮了一碗面，加了两个蛋。原来一个人吃饭也可以很认真。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 时间线 -->
+  <section class="section" id="journey">
+    <div class="wrap">
+      <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto">
+        <span class="eyebrow">Journey</span>
+        <h2 class="section-title">七年，一步一步走到这里</h2>
+        <p class="section-desc" style="margin:0 auto">从一个人的自拍镜头，到一群人的长期陪伴。我们始终相信慢一点，才能更靠近真实。</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-content">
+            <div class="year">2018</div>
+            <h4>第一支短片上线</h4>
+            <p>主理人在出租屋里用手机拍下《今天我允许自己不出门》，获得了第一批陌生观众的留言。</p>
+          </div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-content">
+            <div class="year">2020</div>
+            <h4>深夜电台开播</h4>
+            <p>在特殊时期启动的陪伴计划，以声音形式陪观众度过漫长的居家时光，累计播放突破百万。</p>
+          </div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-content">
+            <div class="year">2022</div>
+            <h4>建立心理顾问机制</h4>
+            <p>与专业咨询师团队合作，为每一期情绪类内容建立审读流程，让陪伴更加负责。</p>
+          </div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-content">
+            <div class="year">2024</div>
+            <h4>线下观影会启动</h4>
+            <p>在六座城市举办小型观影与分享会，第一次让屏幕前的“我们”，真正坐在同一间屋子里。</p>
+          </div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-content">
+            <div class="year">今年</div>
+            <h4>继续，把镜头交出去</h4>
+            <p>开放素人投稿计划，邀请更多普通女性讲述自己的故事，让自愈的叙事拥有更多可能。</p>
+          </div>
+          <div class="tl-empty"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" style="background:linear-gradient(180deg,var(--paper),var(--paper-2))">
+    <div class="wrap faq-wrap">
+      <div class="reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title">你可能想知道</h2>
+        <p class="section-desc">关于内容、投稿与陪伴方式的一些说明。如果还有疑问，欢迎在下方订阅后与我们通信。</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">这些内容需要付费观看吗？<span class="ico"></span></button>
+          <div class="faq-a"><p>绝大多数节目在各大平台免费开放。我们也会不定期推出深度专题与线下活动，相关收益将用于支持素人投稿计划与心理健康公益合作。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">我想投稿自己的故事，怎么参与？<span class="ico"></span></button>
+          <div class="faq-a"><p>订阅后我们会发送投稿入口。你可以提交文字、音频或手机拍摄的素材，编辑团队会在两周内回复。所有内容发布前都会与你确认剪辑方式与呈现范围。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">节目里的建议可以替代心理咨询吗？<span class="ico"></span></button>
+          <div class="faq-a"><p>不可以。我们的内容属于情绪陪伴与经验分享，不具备诊断与治疗功能。如果你持续感到痛苦或影响日常功能，请优先寻求专业心理或医疗机构帮助。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">更新频率是怎样的？<span class="ico"></span></button>
+          <div class="faq-a"><p>常规为每周三更新，深夜电台在周日加更。遇到特别专题会提前在订阅邮件与社区公告中说明节奏。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">可以合作或转载吗？<span class="ico"></span></button>
+          <div class="faq-a"><p>欢迎与关注女性成长、心理健康议题的机构合作。请通过页脚邮箱联系我们，并注明合作背景与使用场景，我们会在三个工作日内答复。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band" id="subscribe">
+    <span class="cta-glow g1"></span>
+    <span class="cta-glow g2"></span>
+    <div class="wrap cta-inner reveal">
+      <span class="eyebrow" style="color:#e8b4b8">Stay With Us</span>
+      <h2>留一个位置给未来的自己</h2>
+      <p>订阅我们的每周来信，你会收到新片预告、一篇短文，以及一句恰好的提醒。不打扰，只在需要的时候出现。</p>
+      <form class="cta-form" id="subForm">
+        <input type="email" id="subEmail" placeholder="你的邮箱地址" aria-label="邮箱地址" required>
+        <button type="submit">订阅陪伴</button>
+      </form>
+      <div class="cta-msg" id="subMsg"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 20s-7-4.4-7-9.2C5 7.7 7 6 9.3 6c1.2 0 2.2.6 2.7 1.5C12.5 6.6 13.5 6 14.7 6 17 6 19 7.7 19 10.8 19 15.6 12 20 12 20Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <b>女生自愈视频</b>
+            <span>Her Healing Frames</span>
+          </span>
+        </div>
+        <p>以影像记录真实女性经验，搭建一个温柔、专业、长期的自我修复陪伴空间。</p>
+        <div class="foot-social" aria-label="社交平台">
+          <a href="#top" aria-label="微博"><svg viewBox="0 0 24 24"><path d="M10 4a8 8 0 0 1 8 8 1 1 0 1 1-2 0 6 6 0 0 0-6-6 1 1 0 1 1 0-2Zm0 4a4 4 0 0 1 4 4 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2Zm-1.6 6.4c1.4 0 2.6.7 2.6 1.8 0 1-1.2 1.8-2.6 1.8S5.8 17.2 5.8 16.2c0-1 1.2-1.8 2.6-1.8Z"/></svg></a>
+          <a href="#top" aria-label="视频号"><svg viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11ZM10 9v6l5-3-5-3Z"/></svg></a>
+          <a href="#top" aria-label="小红书"><svg viewBox="0 0 24 24"><path d="M7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm5 3.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5Zm5.4-.9a1 1 0 1 0 1 1 1 1 0 0 0-1-1Z"/></svg></a>
+          <a href="#top" aria-label="播客"><svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 0-4 4v4a4 4 0 0 0 8 0V7a4 4 0 0 0-4-4Zm-7 8a1 1 0 0 1 1 1 6 6 0 0 0 12 0 1 1 0 1 1 2 0 8 8 0 0 1-7 7.9V21a1 1 0 1 1-2 0v-1.1A8 8 0 0 1 4 12a1 1 0 0 1 1-1Z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>内容</h5>
+        <ul>
+          <li><a href="#channels">深夜电台</a></li>
+          <li><a href="#channels">纪实短片</a></li>
+          <li><a href="#channels">圆桌对话</a></li>
+          <li><a href="#channels">生活练习</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>品牌</h5>
+        <ul>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#journey">成长足迹</a></li>
+          <li><a href="#voices">嘉宾声音</a></li>
+          <li><a href="#community">社区日记</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>联系</h5>
+        <ul>
+          <li><a href="#subscribe">订阅来信</a></li>
+          <li><a href="#faq">投稿计划</a></li>
+          <li><a href="#faq">合作洽谈</a></li>
+          <li><a href="#top">hello@herframes.cn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2024 女生自愈视频 · 保留所有权利</span>
+      <span>本页面内容为情绪陪伴与经验分享，不构成专业医疗建议。</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">
+  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 顶部滚动状态 */
+  var head = document.getElementById('siteHead');
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset;
+    if(y > 20){ head.classList.add('scrolled'); } else { head.classList.remove('scrolled'); }
+    if(y > 620){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 移动菜单 */
+  var burger = document.getElementById('burger');
+  var panel = document.getElementById('mobilePanel');
+  burger.addEventListener('click', function(){
+    var open = panel.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      panel.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 滚动显现 */
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* 频道筛选 */
+  var tabs = document.querySelectorAll('.channel-tabs button');
+  var cards = document.querySelectorAll('#channelGrid .channel-card');
+  tabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      tabs.forEach(function(t){ t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      var f = tab.getAttribute('data-filter');
+      cards.forEach(function(card){
+        var show = (f === 'all' || card.getAttribute('data-cat') === f);
+        card.style.display = show ? '' : 'none';
+        if(show){
+          card.classList.remove('in');
+          void card.offsetWidth;
+          card.classList.add('in');
+        }
+      });
+    });
+  });
+
+  /* FAQ 手风琴 */
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    var ans = item.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      faqItems.forEach(function(other){
+        other.classList.remove('open');
+        other.querySelector('.faq-a').style.maxHeight = null;
+        other.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('.stat-box b[data-count]');
+  function animCount(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var small = el.querySelector('small');
+    var suffix = small ? small.outerHTML : '';
+    var cur = 0, dur = 1400, start = null;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start)/dur, 1);
+      var eased = 1 - Math.pow(1-p, 3);
+      cur = Math.floor(target * eased);
+      el.innerHTML = cur + suffix;
+      if(p < 1) requestAnimationFrame(step);
+      else el.innerHTML = target + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          animCount(en.target);
+          co.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.5});
+    counters.forEach(function(c){ co.observe(c); });
+  } else {
+    counters.forEach(animCount);
+  }
+
+  /* 社区日记 */
+  var form = document.getElementById('diaryForm');
+  var wall = document.getElementById('wall');
+  var msg = document.getElementById('diaryMsg');
+  var wallCount = document.getElementById('wallCount');
+  var notesData = [
+    {name:'阿禾', mood:'正在恢复', text:'今天终于把拖了三个月的体检做了。原来照顾自己，可以先从一件很小的事开始。'},
+    {name:'Momo', mood:'被治愈了', text:'看完《一个人走过的三十个清晨》，我也在阳台养了一盆薄荷。每天浇水的时候很安静。'},
+    {name:'晚风', mood:'有点累', text:'这周连着加班到十点。回家路上听了那期电台，突然觉得有人陪着，脚步就轻了一点。'},
+    {name:'青缇', mood:'平静', text:'给自己煮了一碗面，加了两个蛋。原来一个人吃饭也可以很认真。'}
+  ];
+  var totalCount = 4827;
+
+  function updateCount(){
+    wallCount.textContent = '共 ' + totalCount.toLocaleString('zh-CN') + ' 条心事';
+  }
+  updateCount();
+
+  function createNote(item){
+    var div = document.createElement('div');
+    div.className = 'note';
+    var initial = item.name ? item.name.charAt(0) : '匿';
+    div.innerHTML =
+      '<div class="note-head">' +
+        '<span class="note-avatar">' + escapeHtml(initial) + '</span>' +
+        '<b>' + escapeHtml(item.name) + '</b>' +
+        '<span class="mood">' + escapeHtml(item.mood) + '</span>' +
+      '</div>' +
+      '<p>' + escapeHtml(item.text) + '</p>';
+    return div;
+  }
+
+  function escapeHtml(str){
+    return String(str).replace(/[&<>"']/g, function(ch){
+      return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[ch];
+    });
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('diaryName').value.trim();
+    var mood = document.getElementById('diaryMood').value;
+    var text = document.getElementById('diaryText').value.trim();
+    if(text.length < 4){
+      msg.textContent = '再多写一点点吧，哪怕只是几个字。';
+      return;
+    }
+    var item = {
+      name: name || '匿名的她',
+      mood: mood,
+      text: text
+    };
+    totalCount += 1;
+    updateCount();
+    var node = createNote(item);
+    wall.insertBefore(node, wall.firstChild);
+    document.getElementById('diaryText').value = '';
+    document.getElementById('diaryName').value = '';
+    msg.textContent = '已经放好了。愿这一刻被温柔记住。';
+    setTimeout(function(){ msg.textContent = ''; }, 5200);
+  });
+
+  /* 订阅 */
+  var subForm = document.getElementById('subForm');
+  var subMsg = document.getElementById('subMsg');
+  subForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = document.getElementById('subEmail').value.trim();
+    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if(!ok){
+      subMsg.textContent = '邮箱格式好像不太对，再检查一下？';
+      return;
+    }
+    subMsg.textContent = '订阅成功。下一封信，会在周日晚上抵达。';
+    document.getElementById('subEmail').value = '';
+    setTimeout(function(){ subMsg.textContent = ''; }, 6000);
+  });
+
+  /* 平滑锚点滚动补偿固定头部 */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.scrollY - 74;
+      window.scrollTo({top: top, behavior:'smooth'});
+    });
+  });
+
+})();
+</script>
+</body>
+                </html>
